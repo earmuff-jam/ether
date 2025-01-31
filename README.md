@@ -4,7 +4,7 @@
 
 [![License][license-image]][license]
 
-<img src="https://raw.githubusercontent.com/earmuff-jam/fleetwise/main/frontend/public/fleetwise.png" alt="Ether App" title="Ether App" align="right" width="400px" height="400px" />
+<img src="https://raw.githubusercontent.com/earmuff-jam/ether/main/assets/ether.jpg" alt="Ether App" title="Ether App" align="right" width="400px" height="400px" />
 
 ## Overview
 
