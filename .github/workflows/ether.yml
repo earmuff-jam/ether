@@ -1,0 +1,31 @@
+name: CI
+
+on: [push]
+
+env:
+  GO111MODULE: "on"
+  DOCKER_DRIVER: overlay
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Go code
+        uses: docker://golang:latest
+        with:
+          args: |
+            echo "Attempting to build go code."
+            go version
+            go mod download
+            CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
+            echo "Go build successful."
+
+      - name: Run Unit Tests
+        run: |
+          echo "Attempting to build go code."
+          go version
+          go test -coverprofile= logs/coverage.out ./... && go tool cover -func= logs/coverage.out
