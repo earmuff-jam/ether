@@ -1,8 +1,9 @@
 package ether
 
 import (
-	"earmuff-jam/ether/types"
 	"testing"
+
+	"github.com/earmuff-jam/ether/types"
 
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"

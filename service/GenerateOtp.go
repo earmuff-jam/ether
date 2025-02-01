@@ -4,13 +4,14 @@ import (
 	"bytes"
 	"crypto/hmac"
 	"crypto/sha1"
-	"earmuff-jam/ether/types"
-	"earmuff-jam/ether/utils"
 	"encoding/binary"
 	"errors"
 	"log"
 	"strconv"
 	"time"
+
+	"github.com/earmuff-jam/ether/types"
+	"github.com/earmuff-jam/ether/utils"
 
 	"github.com/google/uuid"
 )

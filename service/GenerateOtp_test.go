@@ -1,10 +1,11 @@
 package service
 
 import (
-	"earmuff-jam/ether/types"
-	"earmuff-jam/ether/utils"
 	"errors"
 	"testing"
+
+	"github.com/earmuff-jam/ether/types"
+	"github.com/earmuff-jam/ether/utils"
 
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"

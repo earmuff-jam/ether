@@ -1,10 +1,11 @@
 package ether
 
 import (
-	"earmuff-jam/ether/service"
-	"earmuff-jam/ether/types"
-	"earmuff-jam/ether/utils"
 	"errors"
+
+	"github.com/earmuff-jam/ether/service"
+	"github.com/earmuff-jam/ether/types"
+	"github.com/earmuff-jam/ether/utils"
 )
 
 // GenerateOTP ...
